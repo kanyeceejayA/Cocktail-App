@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Cocktail App",
       theme: ThemeData(
-        primarySwatch: myColor,
+        primarySwatch: myColor as MaterialColor?,
         fontFamily: "Pacifico",
       ),
       home: HomePage(),

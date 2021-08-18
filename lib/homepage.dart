@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   fetchData() async {
-    res = await http.get(api);
+    res = await http.get(Uri.parse(api));
     drinks = jsonDecode(res.body)["drinks"];
     print(drinks.toString());
     setState(() {});
